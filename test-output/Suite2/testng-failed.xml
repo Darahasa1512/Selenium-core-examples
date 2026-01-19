@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite2]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="TestIE(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="multi_browser_testng.Cross_Browser_Test_eg">
+        <methods>
+          <include name="teardown"/>
+          <include name="test1"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- multi_browser_testng.Cross_Browser_Test_eg -->
+    </classes>
+  </test> <!-- TestIE(failed) -->
+</suite> <!-- Failed suite [Suite2] -->
