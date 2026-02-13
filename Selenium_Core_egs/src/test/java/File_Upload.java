@@ -10,13 +10,15 @@ public class File_Upload {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		driver.get("https://www.tutorialspoint.com/selenium/practice/upload-download.php");
-		WebElement m = driver.findElement(By.xpath("//*[@id='uploadFile']"));
+		WebElement m = driver.findElement(By.id("uploadFile"));
 	      File f = new File("C:\\Users\\darah\\OneDrive\\Desktop\\Test.txt");
-	      System.out.println("Getting the file path to be uploaded: " + f.getAbsolutePath());
-
 	      m.sendKeys(f.getAbsolutePath());
+	      System.out.println("Getting the file path to be uploaded: " + f.getAbsolutePath());
+	      
+	      String x=m.getAttribute("value");
+	      System.out.println("Uploaded value: "+x);
 
-	      if (m.getAttribute("value").equalsIgnoreCase("Test.txt")) {
+	      if (x.contains("Test.txt")) {
 	         System.out.println("File uploaded successfully ");
 	      } else {
 	         System.out.println("File uploaded unsuccessfully ");

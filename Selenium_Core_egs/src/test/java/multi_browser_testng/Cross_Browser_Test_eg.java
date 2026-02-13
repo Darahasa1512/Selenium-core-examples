@@ -34,7 +34,7 @@ public class Cross_Browser_Test_eg {
 	
 	@AfterTest
 	public static void teardown() {
-		driver.close();
+		driver.quit();
 		System.out.println("Cross Browser Test Success");
 		
 	}

@@ -7,8 +7,8 @@
       <class name="multi_browser_testng.Cross_Browser_Test_eg">
         <methods>
           <include name="teardown"/>
-          <include name="test1"/>
           <include name="setup"/>
+          <include name="test1"/>
         </methods>
       </class> <!-- multi_browser_testng.Cross_Browser_Test_eg -->
     </classes>

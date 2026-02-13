@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Data_Driven_eg">
+      <class name="multi_browser_testng.Cross_Browser_Test_eg">
         <methods>
-          <include name="tearDown"/>
+          <include name="teardown"/>
+          <include name="test1"/>
           <include name="setup"/>
-          <include name="fillForm" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- Data_Driven_eg -->
+      </class> <!-- multi_browser_testng.Cross_Browser_Test_eg -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
